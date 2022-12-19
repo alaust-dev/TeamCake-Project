@@ -1,0 +1,6 @@
+name: TeamCake-Project
+description: Project plugin for TeamCake
+version: ${project.version}
+author: alaust
+main: de.teamcake.TeamcakeProject
+
