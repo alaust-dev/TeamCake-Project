@@ -3,4 +3,4 @@ description: Project plugin for TeamCake
 version: ${project.version}
 author: alaust
 main: de.teamcake.TeamcakeProject
-
+api-version: 1.13
