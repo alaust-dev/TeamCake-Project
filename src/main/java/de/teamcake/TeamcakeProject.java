@@ -1,5 +1,6 @@
 package de.teamcake;
 
+import de.teamcake.item.component.manapotion.ManaPotionConsumableListener;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.plugin.PluginManager;
@@ -39,7 +40,8 @@ public class TeamcakeProject extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new CustomBlockDropListener(), this);
         pluginManager.registerEvents(new CustomEntityDropListener(), this);
-
+        
+        pluginManager.registerEvents(new ManaPotionConsumableListener(), this);
         pluginManager.registerEvents(new WOTWInteractionListener(), this);
     }
 
