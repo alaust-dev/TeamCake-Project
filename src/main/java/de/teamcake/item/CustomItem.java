@@ -8,24 +8,18 @@ import lombok.Getter;
 public abstract class CustomItem {
 
     @Getter
-    protected ItemStack itemStack;
+    protected final ItemStack itemStack;
 
     protected CustomItem(ItemStack itemStack) {
         this.itemStack = itemStack;
     }
 
 
-    @Override
-    public boolean equals(Object object) {
-        if(!(object instanceof CustomItem)) {
-            return false;
-        }
+    public boolean isSimilarTo(ItemStack similarItemStack) {
+        final ItemMeta similarItemMeta = similarItemStack.getItemMeta();
+        final ItemMeta itemMeta = itemStack.getItemMeta();
 
-        ItemStack comparedItemStack =  ((CustomItem) object).itemStack;
-        ItemMeta comparedItemMeta = comparedItemStack.getItemMeta();
-        ItemMeta itemMeta = itemStack.getItemMeta();
-
-        return itemStack.getType() == comparedItemStack.getType()
-                && itemMeta.getCustomModelData() == comparedItemMeta.getCustomModelData();
+        return itemStack.getType() == similarItemStack.getType()
+                && itemMeta.getCustomModelData() == similarItemMeta.getCustomModelData();
     }
 }
