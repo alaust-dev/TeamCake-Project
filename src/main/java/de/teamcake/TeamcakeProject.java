@@ -1,5 +1,6 @@
 package de.teamcake;
 
+import de.teamcake.item.component.manapotion.CustomItemConsume;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.plugin.PluginManager;
@@ -38,6 +39,7 @@ public class TeamcakeProject extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new CustomBlockDropListener(), this);
         pluginManager.registerEvents(new CustomEntityDropListener(), this);
+        pluginManager.registerEvents(new CustomItemConsume(), this);
     }
 
     private void registerCustomRecipes() {
