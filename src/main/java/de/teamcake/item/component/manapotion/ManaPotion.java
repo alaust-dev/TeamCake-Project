@@ -1,5 +1,6 @@
 package de.teamcake.item.component.manapotion;
 
+
 import de.teamcake.TeamcakeProject;
 import de.teamcake.common.util.ItemStackBuilder;
 import de.teamcake.item.CustomCraftItem;
@@ -11,8 +12,9 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
-public class ManaPotion extends CustomItem implements CustomCraftItem{
-    public ManaPotion(){
+public class ManaPotion extends CustomItem implements CustomCraftItem {
+
+    public ManaPotion() {
         super(new ItemStackBuilder(Material.POTION)
                 .setCustomModelData(1)
                 .setName(Component.text("§fMana Potion"))
@@ -21,6 +23,7 @@ public class ManaPotion extends CustomItem implements CustomCraftItem{
                 .build());
 
     }
+    
     @Override
     public Recipe[] getRecipes() {
         ShapelessRecipe recipe = new ShapelessRecipe(new NamespacedKey(TeamcakeProject.getPlugin(),

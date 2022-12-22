@@ -42,6 +42,7 @@ public class TeamcakeProject extends JavaPlugin {
         pluginManager.registerEvents(new CustomBlockDropListener(), this);
         pluginManager.registerEvents(new CustomEntityDropListener(), this);
         pluginManager.registerEvents(new ManaPotionConsumeListener(), this);
+
         pluginManager.registerEvents(new WOTWInteractionListener(), this);
         pluginManager.registerEvents(new FWInteractionListener(), this);
     }
