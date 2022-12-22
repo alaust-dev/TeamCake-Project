@@ -5,6 +5,7 @@ import de.teamcake.common.util.ItemStackBuilder;
 import de.teamcake.item.CustomCraftItem;
 import de.teamcake.item.CustomItem;
 import net.kyori.adventure.text.Component;
+import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.Recipe;
@@ -16,6 +17,7 @@ public class ManaPotion extends CustomItem implements CustomCraftItem{
                 .setCustomModelData(1)
                 .setName(Component.text("§fMana Potion"))
                 .setDescription(Component.text("§fIt refills your mana bar."))
+                .setPotionColor(Color.WHITE)
                 .build());
 
     }

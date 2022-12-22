@@ -1,6 +1,7 @@
 package de.teamcake;
 
-import de.teamcake.item.component.manapotion.CustomItemConsume;
+import de.teamcake.item.component.manapotion.ManaPotionConsumeListener;
+import de.teamcake.item.wand.farmerswand.FWInteractionListener;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.plugin.PluginManager;
