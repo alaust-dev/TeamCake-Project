@@ -1,16 +1,16 @@
 package de.teamcake.item.component.manapotion;
 
-import org.bukkit.Color;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.ShapelessRecipe;
 
 import de.teamcake.TeamcakeProject;
 import de.teamcake.common.util.ItemStackBuilder;
 import de.teamcake.item.CustomCraftItem;
 import de.teamcake.item.CustomItem;
 import net.kyori.adventure.text.Component;
+import org.bukkit.Color;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.Recipe;
+import org.bukkit.inventory.ShapelessRecipe;
 
 public class ManaPotion extends CustomItem implements CustomCraftItem {
 
@@ -23,7 +23,7 @@ public class ManaPotion extends CustomItem implements CustomCraftItem {
                 .build());
 
     }
-
+    
     @Override
     public Recipe[] getRecipes() {
         ShapelessRecipe recipe = new ShapelessRecipe(new NamespacedKey(TeamcakeProject.getPlugin(),
