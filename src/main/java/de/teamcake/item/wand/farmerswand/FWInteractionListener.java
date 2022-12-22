@@ -29,7 +29,6 @@ public class FWInteractionListener implements Listener {
             Block target = event.getPlayer().getTargetBlockExact(10);
             if(target.getBlockData()instanceof Ageable){
                 PlayerMana.consumeMana(event.getPlayer(), 3);
-                Bukkit.broadcastMessage("debug");
                 Ageable ab = (Ageable) target.getBlockData();
                 int currentage = ab.getAge();
                 int maxage = ab.getMaximumAge();
@@ -43,4 +42,4 @@ public class FWInteractionListener implements Listener {
                 }
             }
         }
-    }
+}

@@ -41,8 +41,9 @@ public class TeamcakeProject extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new CustomBlockDropListener(), this);
         pluginManager.registerEvents(new CustomEntityDropListener(), this);
-        pluginManager.registerEvents(new CustomItemConsume(), this);
+        pluginManager.registerEvents(new ManaPotionConsumeListener(), this);
         pluginManager.registerEvents(new WOTWInteractionListener(), this);
+        pluginManager.registerEvents(new FWInteractionListener(), this);
     }
 
     private void registerCustomRecipes() {
