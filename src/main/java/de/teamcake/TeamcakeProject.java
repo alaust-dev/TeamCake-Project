@@ -10,6 +10,7 @@ import de.teamcake.item.CustomCraftItem;
 import de.teamcake.item.CustomItemMaterial;
 import de.teamcake.item.listener.CustomBlockDropListener;
 import de.teamcake.item.listener.CustomEntityDropListener;
+import de.teamcake.item.wand.wandoftheearth.WOTEInteractionListener;
 import de.teamcake.item.wand.wandofthewater.WOTWInteractionListener;
 import de.teamcake.mechanic.darkervision.DarkerVisionRunnable;
 import de.teamcake.mechanic.mana.runnables.ManaRegenerationRunnable;
@@ -43,6 +44,7 @@ public class TeamcakeProject extends JavaPlugin {
         
         pluginManager.registerEvents(new ManaPotionConsumableListener(), this);
         pluginManager.registerEvents(new WOTWInteractionListener(), this);
+        pluginManager.registerEvents(new WOTEInteractionListener(), this);
     }
 
     private void registerCustomRecipes() {
